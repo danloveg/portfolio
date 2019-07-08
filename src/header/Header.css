@@ -1,16 +1,17 @@
 .fixed-header {
     width: 100%;
-    position: fixed;
+    position: relative;
     padding: 0 0;
-    background: #8c99ad;
+    /*background: #8c99ad;*/
+    background-image: linear-gradient(to right, #8c99ad, #c3d2e8);
     color: #000000;
     top: 0;
-    border-bottom: 1px solid;
+    border-bottom: 1.5px solid;
 }
 
 .container {
     width: 96%;
-    margin: 0 auto;
+    margin-left: 1em;
 }
 
 .header-item {

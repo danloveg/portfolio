@@ -1,12 +1,13 @@
 import React from 'react';
-import './App.css';
 
-import Header from "./components/Header"
+import Header from "./header/Header"
+import Sidebar from "./sidebar/Sidebar"
 
 function App() {
   return (
     <div>
       <Header />
+      <Sidebar />
     </div>
   );
 }

@@ -1,0 +1,39 @@
+.sidebar {
+    display: block;
+    height: 100%;
+    width: 180px;
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1;
+    left: 0;
+    background-color: #bac3d1;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    border-right: 1px solid;
+    border-color: #5e5e5e;
+}
+
+.sidebar-table {
+    width: 100%;
+}
+
+.sidebar-button {
+    height: 50px;
+    font-size: 14pt;
+    cursor: pointer;
+}
+
+td {
+    border-bottom: 1px solid;
+    border-color: #5e5e5e;
+}
+
+tr:hover {
+    background-color: #edf1f7;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+.footer-message {
+    bottom: 1;
+}
