@@ -1,0 +1,23 @@
+.fixed-header {
+    width: 100%;
+    position: fixed;
+    padding: 0 0;
+    background: #8c99ad;
+    color: #000000;
+    top: 0;
+    border-bottom: 1px solid;
+}
+
+.container {
+    width: 96%;
+    margin: 0 auto;
+}
+
+.header-item {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.header-image {
+    padding-right: 4px;
+}
