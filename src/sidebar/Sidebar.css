@@ -1,8 +1,9 @@
 .sidebar {
     display: block;
     height: 100%;
-    width: 180px;
-    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    width: 20%;
+    float: left;
+    position: fixed;
     z-index: 1;
     left: 0;
     background-color: #bac3d1;
