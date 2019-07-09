@@ -13,25 +13,19 @@
 
 .sidebar-table {
     width: 100%;
+    border-collapse: collapse;
 }
 
 .sidebar-button {
     height: 50px;
     font-size: 14pt;
     cursor: pointer;
-}
-
-td {
     border-bottom: 1px solid;
     border-color: #5e5e5e;
 }
 
-tr:hover {
+.sidebar-button:hover {
     background-color: #edf1f7;
-}
-
-table {
-    border-collapse: collapse;
 }
 
 .footer-message {
