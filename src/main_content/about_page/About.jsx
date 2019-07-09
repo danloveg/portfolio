@@ -1,10 +1,10 @@
-import React from "react"
+import React, {Component} from "react"
 import Media from "react-media"
 
 import myself from "../../assets/myself.png"
 import myselfSmall from "../../assets/myself_small.png"
 
-class About extends React.Component {
+class About extends Component {
     render() {
         return (
         <div>
@@ -14,6 +14,8 @@ class About extends React.Component {
                         (<img src={myself} alt="A portrait of myself"></img>)}
                 </Media>
             </div>
+            <h1 align="center">About Me</h1>
+            <p>Something something something.</p>
         </div>)
     }
 }
