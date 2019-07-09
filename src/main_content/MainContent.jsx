@@ -1,3 +1,5 @@
+import React from "react"
+
 import About from "./about_page/About"
 
 /**
@@ -6,8 +8,10 @@ import About from "./about_page/About"
  * on which sidebar item was clicked, but on the site's first load I want it to open the About page.
  * I do not know how to do this yet!
  */
-function MainContent() {
-    return About()
+class MainContent extends React.Component {
+    render() {
+        return <About />
+    }
 }
 
 export default MainContent

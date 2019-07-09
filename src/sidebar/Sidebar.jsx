@@ -1,8 +1,9 @@
 import React from "react"
 import "./Sidebar.css"
 
-function Sidebar() {
-    return (
+class Sidebar extends React.Component {
+    render() {
+        return (
         <div className="sidebar-container">
             <div className="sidebar">
                 <table className="sidebar-table">
@@ -22,8 +23,8 @@ function Sidebar() {
                     </tbody>
                 </table>
             </div>
-        </div>
-    )
+        </div>)
+    }
 }
 
 export default Sidebar
