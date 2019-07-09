@@ -1,13 +1,17 @@
 import React from "react"
 import "./Header.css"
+
+import menu from "../assets/menu.png"
 import logo from "../assets/logo.png"
 import linkedin from "../assets/linkedin.png"
 import github from "../assets/github.png"
+
 
 function Header() {
     return (
         <div className="fixed-header">
             <div className="container">
+                <img id="menu-button" className="header-item header-image" alt="Menu button" src={menu}></img>
                 <img className="header-item header-image" alt="Square logo" src={logo}></img>
                 <h1 className="header-item">Daniel Lovegrove</h1>
                 <table className="header-links-item">

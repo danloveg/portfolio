@@ -1,7 +1,7 @@
 .fixed-header {
     width: 100%;
-    position: relative;
-    padding: 0 0;
+    height: 80px;
+    position: fixed;
     background-image: linear-gradient(to right, #8c99ad, #c3d2e8);
     color: #000000;
     top: 0;
@@ -9,6 +9,9 @@
 }
 
 .container {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
     width: 96%;
     margin-left: 1em;
 }
@@ -26,4 +29,41 @@
 
 .header-image {
     padding-right: 4px;
+}
+
+#menu-button {
+    margin-right: 1em;
+}
+
+#menu-button:hover {
+    cursor: pointer;
+}
+
+/* When screen is smaller than 512px, hide links */
+@media(max-width: 512px) {
+    .header-links-item {
+        display: none;
+    }
+
+    .header-item {
+        font-size: 20pt;
+    }
+}
+
+@media(max-width: 350px) {
+    .header-item {
+        font-size: 16pt;
+    }
+}
+
+@media(min-width: 800px) {
+    #menu-button {
+        display: none;
+    }
+}
+
+@media(max-width: 800px) {
+    #menu-button {
+        display: inline-block;
+    }
 }
