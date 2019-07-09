@@ -1,0 +1,29 @@
+:root {
+    --header-height-px: 81.5px;
+  }
+
+.below-header {
+    margin-top: var(--header-height-px);
+}
+
+.main-content-container {
+    overflow-y: hidden;
+    height: calc(100vh - var(--header-height-px));
+    width: 80%;
+    float: right;
+    background-color: #edf1f7;
+}
+
+.main-content {
+    margin: 1em 1em 1em 1em;
+}
+
+@media (max-width: 800px) {
+    .main-content-container {
+        width: 100%;
+    }
+
+    .app-sidebar {
+        display: none;
+    }
+}

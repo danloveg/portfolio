@@ -1,13 +1,24 @@
 import React from 'react';
+import "./App.css"
 
 import Header from "./header/Header"
 import Sidebar from "./sidebar/Sidebar"
+import MainContent from "./main_content/MainContent"
 
 function App() {
   return (
     <div>
       <Header />
-      <Sidebar />
+      <div className="below-header">
+        <div className="app-sidebar">
+          <Sidebar />
+        </div>
+        <div className="main-content-container">
+          <div className="main-content">
+            <MainContent />
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
