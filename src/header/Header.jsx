@@ -12,13 +12,13 @@ class Header extends Component {
                     <tbody>
                         <tr>
                             <td className="header-links-item" onClick={() => this.props.navigateToSection(SectionEnum.Projects)}>
-                                <a>projects</a>
+                                projects
                             </td>
                             <td className="header-links-item">
-                                <a>about</a>
+                                about
                             </td>
                             <td className="header-links-item">
-                                <a>contact</a>
+                                contact
                             </td>
                         </tr>
                     </tbody>

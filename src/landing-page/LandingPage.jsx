@@ -13,7 +13,9 @@ class LandingPage extends Component {
                 <div className="introduction">
                     <span className="introduction-name">Daniel Lovegrove:</span><br />
                     <span className="introduction-title">A Full Stack Web Developer</span><br />
-                    <a href={resumePdf} target="_blank"><button className="introduction-resume">R&eacute;sum&eacute;</button></a>
+                    <a href={resumePdf} target="_blank" rel="noopener noreferrer">
+                        <button className="introduction-resume">R&eacute;sum&eacute;</button>
+                    </a>
                 </div>
                 <table onClick={() => this.props.navigateToSection(SectionEnum.Projects)} className="see-my-work-table">
                     <tbody>
