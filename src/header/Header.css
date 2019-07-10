@@ -25,6 +25,7 @@
 }
 
 .header-links-item {
+    font-family: Arial;
     height: var(--header-height);
     padding-top: 0;
     padding-bottom: 0;

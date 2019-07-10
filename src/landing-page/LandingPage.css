@@ -2,12 +2,48 @@
     position: relative;
     margin-top: var(--header-height);
     height: calc(100vh - var(--header-height));
+    background-color: #ffac40;
+}
+
+.introduction {
+    text-align: center;
+    color: #303030;
+    font-family: 'Courier New', Courier, monospace;
+
+    position: relative;
+    padding-top: 35vh;
+}
+
+.introduction-name {
+    font-size: 24pt;
+    font-weight: bold;
+}
+
+.introduction-title {
+    font-size: 24pt;
+    font-weight: bold;
+}
+
+.introduction-resume {
+    font-size: 16pt;
+    font-family: inherit;
+    font-weight: bold;
+    color: #303030;
+    border: 1.5px solid;
+    border-radius: 3px;
+    border-color: #303030;
+    background-color: transparent;
+
+    cursor: pointer;
+
+    margin-top: 40px;
 }
 
 .see-my-work-table {
     text-align: center;
     font-size: 16pt;
     font-family: Courier;
+    color: #303030;
 
     border-collapse: collapse;
     cursor: pointer;

@@ -1,6 +1,8 @@
 import React, {Component} from "react"
 import "./LandingPage.css"
+
 import downArrow from "../assets/down_arrow.png"
+import resumePdf from "../assets/Resume_07_2019_DLovegrove.pdf"
 
 class LandingPage extends Component {
 
@@ -10,7 +12,7 @@ class LandingPage extends Component {
         this.headerHeight = 60
     }
 
-    scrollToProjects() {
+    scrollToBottom() {
         const bottomOfLandingPage = (this.containerRef.current.offsetTop + this.containerRef.current.offsetHeight - this.headerHeight)
         window.scrollTo({top: bottomOfLandingPage, behavior: "smooth"})
     }
@@ -18,13 +20,18 @@ class LandingPage extends Component {
     render() {
         return (
             <div ref={this.containerRef} className="landing-page-container">
-                <table onClick={() => this.scrollToProjects()} className="see-my-work-table">
+                <div className="introduction">
+                    <span className="introduction-name">Daniel Lovegrove</span><br />
+                    <span className="introduction-title">Full Stack Web Developer</span><br />
+                    <a href={resumePdf} target="_blank"><button className="introduction-resume">R&eacute;sum&eacute;</button></a>
+                </div>
+                <table onClick={() => this.scrollToBottom()} className="see-my-work-table">
                     <tbody>
                         <tr>
-                            <td>See My Work</td>
+                            <td><b>See My Work</b></td>
                         </tr>
                         <tr>
-                            <td><img src={downArrow}></img></td>
+                            <td><img alt="Downwards pointing arrow" src={downArrow}></img></td>
                         </tr>
                     </tbody>
                 </table>
