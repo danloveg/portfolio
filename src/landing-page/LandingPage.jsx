@@ -21,8 +21,8 @@ class LandingPage extends Component {
         return (
             <div ref={this.containerRef} className="landing-page-container">
                 <div className="introduction">
-                    <span className="introduction-name">Daniel Lovegrove</span><br />
-                    <span className="introduction-title">Full Stack Web Developer</span><br />
+                    <span className="introduction-name">Daniel Lovegrove:</span><br />
+                    <span className="introduction-title">A Full Stack Web Developer</span><br />
                     <a href={resumePdf} target="_blank"><button className="introduction-resume">R&eacute;sum&eacute;</button></a>
                 </div>
                 <table onClick={() => this.scrollToBottom()} className="see-my-work-table">

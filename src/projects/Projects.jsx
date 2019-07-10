@@ -5,7 +5,7 @@ class Projects extends Component {
     render() {
         return (
             <div className="projects-container">
-                My Projects
+                <h1 align="center">Under Construction!</h1>
             </div>
         )
     }
