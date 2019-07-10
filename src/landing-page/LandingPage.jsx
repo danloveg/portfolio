@@ -7,14 +7,9 @@ import downArrow from "../assets/down_arrow.png"
 import resumePdf from "../assets/Resume_07_2019_DLovegrove.pdf"
 
 class LandingPage extends Component {
-    constructor() {
-        super()
-        this.containerRef = React.createRef();
-    }
-
     render() {
         return (
-            <div ref={this.containerRef} className="landing-page-container">
+            <div className="landing-page-container">
                 <div className="introduction">
                     <span className="introduction-name">Daniel Lovegrove:</span><br />
                     <span className="introduction-title">A Full Stack Web Developer</span><br />
