@@ -6,24 +6,10 @@ import WorkExperience from "./work_experience_page/WorkExperience"
 import Contact from "./contact_page/Contact"
 import PageEnum from "../PageEnum"
 
-/**
- * Note to self: This function will need to return different things depending on the page to be
- * shown in the main content section. Main Content will need to return something different depending
- * on which sidebar item was clicked, but on the site's first load I want it to open the About page.
- * I do not know how to do this yet!
- */
 class MainContent extends Component {
-    constructor() {
-        super()
-        this.state = {currentDisplayedPage: PageEnum.About}
-    }
-
-    handlePageChange(page) {
-
-    }
 
     render() {
-        switch (this.state.currentDisplayedPage) {
+        switch (this.props.pageToDisplay) {
             case PageEnum.About:
                 return <About />
             case PageEnum.Projects:

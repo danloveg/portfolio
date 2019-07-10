@@ -25,6 +25,10 @@
     border-color: #5e5e5e;
 }
 
+.highlighted {
+    background-color: #edf1f7;
+}
+
 .sidebar-button:hover {
     background-color: #edf1f7;
 }
