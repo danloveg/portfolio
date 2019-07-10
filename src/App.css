@@ -1,6 +1,10 @@
 :root {
     --header-height-px: 81.5px;
-  }
+}
+
+body {
+    font-family: Arial;
+}
 
 .below-header {
     margin-top: var(--header-height-px);

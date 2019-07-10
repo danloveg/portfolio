@@ -15,7 +15,7 @@ class About extends Component {
                 </Media>
             </div>
             <h1 align="center">About Me</h1>
-            <p>Something something something.</p>
+            <p>Work in progress.</p>
         </div>)
     }
 }
