@@ -11,7 +11,7 @@
     font-family: 'Courier New', Courier, monospace;
 
     position: relative;
-    padding-top: 35vh;
+    padding-top: 30vh;
 }
 
 .introduction-name {
@@ -55,4 +55,14 @@
     margin-left: -100px;
     bottom: 0;
     margin-bottom: 1em;
+}
+
+@media(max-width: 512px) {
+    .introduction-name {
+        font-size: 16pt;
+    }
+
+    .introduction-title {
+        font-size: 16pt;
+    }
 }
