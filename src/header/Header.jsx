@@ -1,6 +1,8 @@
 import React, {Component} from "react"
 import "./Header.css"
 
+import SectionEnum from "../SectionEnum"
+
 class Header extends Component {
     render() {
         return (
@@ -9,7 +11,7 @@ class Header extends Component {
                 <table className="header-links">
                     <tbody>
                         <tr>
-                            <td className="header-links-item">
+                            <td className="header-links-item" onClick={() => this.props.navigateToSection(SectionEnum.Projects)}>
                                 <a>projects</a>
                             </td>
                             <td className="header-links-item">

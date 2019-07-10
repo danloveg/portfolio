@@ -1,20 +1,15 @@
 import React, {Component} from "react"
 import "./LandingPage.css"
 
+import SectionEnum from "../SectionEnum"
+
 import downArrow from "../assets/down_arrow.png"
 import resumePdf from "../assets/Resume_07_2019_DLovegrove.pdf"
 
 class LandingPage extends Component {
-
     constructor() {
         super()
         this.containerRef = React.createRef();
-        this.headerHeight = 60
-    }
-
-    scrollToBottom() {
-        const bottomOfLandingPage = (this.containerRef.current.offsetTop + this.containerRef.current.offsetHeight - this.headerHeight)
-        window.scrollTo({top: bottomOfLandingPage, behavior: "smooth"})
     }
 
     render() {
@@ -25,7 +20,7 @@ class LandingPage extends Component {
                     <span className="introduction-title">A Full Stack Web Developer</span><br />
                     <a href={resumePdf} target="_blank"><button className="introduction-resume">R&eacute;sum&eacute;</button></a>
                 </div>
-                <table onClick={() => this.scrollToBottom()} className="see-my-work-table">
+                <table onClick={() => this.props.navigateToSection(SectionEnum.Projects)} className="see-my-work-table">
                     <tbody>
                         <tr>
                             <td><b>See My Work</b></td>
