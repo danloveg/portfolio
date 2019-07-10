@@ -1,0 +1,22 @@
+.landing-page-container {
+    position: relative;
+    margin-top: var(--header-height);
+    height: calc(100vh - var(--header-height));
+}
+
+.see-my-work-table {
+    text-align: center;
+    font-size: 16pt;
+    font-family: Courier;
+
+    border-collapse: collapse;
+    cursor: pointer;
+
+    /* Positioned at bottom in middle */
+    width: 200px;
+    position: absolute;
+    left: 50%;
+    margin-left: -100px;
+    bottom: 0;
+    margin-bottom: 1em;
+}

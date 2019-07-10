@@ -5,7 +5,7 @@ class Header extends Component {
     render() {
         return (
             <div className="fixed-header">
-                <div className="initials">DL</div>
+                <div className="initials" onClick={() => window.scrollTo(0, 0)}>DL</div>
                 <table className="header-links">
                     <tbody>
                         <tr>
