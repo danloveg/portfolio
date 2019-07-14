@@ -6,7 +6,7 @@ import ProjectItem from "./ProjectItem"
 class Projects extends Component {
     render() {
         return (
-            <div className="projects-container">
+            <div>
                 <ProjectItem title={"Project 1"} />
                 <ProjectItem title={"Project 2"} />
                 <ProjectItem title={"Project 3"} />

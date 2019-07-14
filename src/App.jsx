@@ -4,6 +4,8 @@ import "./App.css"
 import Header from "./header/Header"
 import LandingPage from "./landing-page/LandingPage"
 import Projects from "./projects/Projects"
+import About from "./about/About"
+import Contact from "./contact/Contact"
 import SectionEnum from "./SectionEnum"
 
 class App extends Component {
@@ -50,14 +52,14 @@ class App extends Component {
             <Header navigateToSection={this.navigateToSection} />
             <LandingPage navigateToSection={this.navigateToSection} />
 
-            <div ref={this.projectsRef}>
+            <div className="responsive-container" ref={this.projectsRef}>
                 <Projects />
             </div>
-            <div ref={this.aboutRef}>
-
+            <div className="responsive-container" ref={this.aboutRef}>
+                <About />
             </div>
-            <div ref={this.contactRef}>
-
+            <div className="responsive-container" ref={this.contactRef}>
+                <Contact />
             </div>
         </div>)
     }
