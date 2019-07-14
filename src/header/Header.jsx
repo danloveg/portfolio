@@ -1,6 +1,7 @@
 import React, {Component} from "react"
 import "./Header.css"
 
+import HeaderLink from "./HeaderLink"
 import SectionEnum from "../SectionEnum"
 
 class Header extends Component {
@@ -8,21 +9,9 @@ class Header extends Component {
         return (
             <div className="fixed-header">
                 <div className="initials" onClick={() => window.scrollTo(0, 0)}>DL</div>
-                <table className="header-links">
-                    <tbody>
-                        <tr>
-                            <td className="header-links-item" onClick={() => this.props.navigateToSection(SectionEnum.Projects)}>
-                                projects
-                            </td>
-                            <td className="header-links-item">
-                                about
-                            </td>
-                            <td className="header-links-item">
-                                contact
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+                <HeaderLink page={SectionEnum.Contact} title="contact" navigateToSection={this.props.navigateToSection} />
+                <HeaderLink page={SectionEnum.About} title="about" navigateToSection={this.props.navigateToSection} />
+                <HeaderLink page={SectionEnum.Projects} title="projects" navigateToSection={this.props.navigateToSection} />
             </div>
         )
     }

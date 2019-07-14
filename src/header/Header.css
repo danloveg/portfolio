@@ -17,16 +17,11 @@
     cursor: pointer
 }
 
-.header-links {
-    display: inline-block;
-    position: absolute;
-    right: 0;
-    border-collapse: collapse;
-}
-
 .header-links-item {
+    float: right;
     font-family: Arial;
     height: var(--header-height);
+    line-height: var(--header-height); /* Vertically aligns text */
     padding-top: 0;
     padding-bottom: 0;
     padding-left: 1em;
