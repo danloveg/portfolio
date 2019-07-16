@@ -1,16 +1,24 @@
 {
   "files": {
     "main.css": "/static/css/main.8ed85aee.chunk.css",
-    "main.js": "/static/js/main.56e44837.chunk.js",
-    "main.js.map": "/static/js/main.56e44837.chunk.js.map",
+    "main.js": "/static/js/main.48070b9f.chunk.js",
+    "main.js.map": "/static/js/main.48070b9f.chunk.js.map",
     "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
     "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
-    "static/js/2.c9b6624a.chunk.js": "/static/js/2.c9b6624a.chunk.js",
-    "static/js/2.c9b6624a.chunk.js.map": "/static/js/2.c9b6624a.chunk.js.map",
+    "static/js/2.39c2d4d5.chunk.js": "/static/js/2.39c2d4d5.chunk.js",
+    "static/js/2.39c2d4d5.chunk.js.map": "/static/js/2.39c2d4d5.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.58810cef2daa087b47f2bd6ccb98ff32.js": "/precache-manifest.58810cef2daa087b47f2bd6ccb98ff32.js",
+    "precache-manifest.70e3a91acf381bdd7f9e569fb28704a2.js": "/precache-manifest.70e3a91acf381bdd7f9e569fb28704a2.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.8ed85aee.chunk.css.map": "/static/css/main.8ed85aee.chunk.css.map",
-    "static/media/Resume_07_2019_DLovegrove.pdf": "/static/media/Resume_07_2019_DLovegrove.8e8a21d5.pdf"
+    "static/media/Resume_07_2019_DLovegrove.pdf": "/static/media/Resume_07_2019_DLovegrove.8e8a21d5.pdf",
+    "static/media/breadtunes_project.png": "/static/media/breadtunes_project.21edd6d1.png",
+    "static/media/breadtunes_project_sm.png": "/static/media/breadtunes_project_sm.2302b5f9.png",
+    "static/media/city_of_winnipeg_project.png": "/static/media/city_of_winnipeg_project.4861f95e.png",
+    "static/media/city_of_winnipeg_project_sm.png": "/static/media/city_of_winnipeg_project_sm.be739361.png",
+    "static/media/portfolio_project.png": "/static/media/portfolio_project.de69a961.png",
+    "static/media/portfolio_project_sm.png": "/static/media/portfolio_project_sm.430d8f8c.png",
+    "static/media/um_iris_project.png": "/static/media/um_iris_project.bd8a0007.png",
+    "static/media/um_iris_project_sm.png": "/static/media/um_iris_project_sm.ece13fc0.png"
   }
 }
