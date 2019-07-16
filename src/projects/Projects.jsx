@@ -34,7 +34,7 @@ class Projects extends Component {
                     bigImage={portfolioImage}
                     smallImage={portfolioImageSmall}
                     codeLink={"https://github.com/danloveg/portfolio"}
-                    demoLink={"http://dlovegrove.ca"} />
+                    demoLink={"https://dlovegrove.ca"} />
                 <ProjectItem
                     title={"City of Winnipeg MyUtilityBill"}
                     bigImage={cityOfWinnipegImage}
