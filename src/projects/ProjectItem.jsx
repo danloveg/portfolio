@@ -1,34 +1,32 @@
 import React, {Component} from "react"
-import Media from "react-media"
+import "./ProjectItem.css"
 
 class ProjectItem extends Component {
+    constructor() {
+        super()
+        this.state = {infoBoxShown: false}
+
+        this.toggleInfoBox = this.toggleInfoBox.bind(this)
+    }
+
+    toggleInfoBox() {
+        this.setState((prevState) => {
+            return {infoBoxShown: (!prevState.infoBoxShown)}
+        });
+    }
+
     render() {
         return (
-            <div>
-                <h1>{this.props.title}</h1>
-
-                <Media query="(max-width: 800px)">
-                    {matches => matches ?
-                        (<a href={this.props.demoLink}><img src={this.props.smallImage} alt={this.props.title}></img></a>) :
-                        (<a href={this.props.demoLink}><img src={this.props.bigImage} alt={this.props.title}></img></a>)
-                    }
-                </Media>
-
-                <br />
-                <CodeLink codeLink={this.props.codeLink} />
-                <br />
-                <a href={this.props.demoLink}>Demo</a>
-                <br />
+            <div className="project-card">
+                <img onClick={() => this.toggleInfoBox()}
+                    className="project-image" src={this.props.bigImage} alt={this.props.title}></img>
+                <p>Project Card</p>
+                <div onClick={() => this.toggleInfoBox()}
+                    className={"info-box " + (this.state.infoBoxShown ? "show" : "hide")}>
+                    <p>Box was toggled.</p>
+                </div>
             </div>
         )
-    }
-}
-
-function CodeLink(props) {
-    if (props.codeLink === undefined) {
-        return <span>Code Private</span>
-    } else {
-        return <a href={props.codeLink}>Code</a>
     }
 }
 

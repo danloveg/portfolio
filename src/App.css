@@ -4,12 +4,6 @@
 
 .responsive-container {
     position: relative;
-    width: 80%;
+    width: 90%;
     margin: auto;
-}
-
-@media (max-width: 800px) {
-    .responsive-container {
-        width: 96%;
-    }
 }

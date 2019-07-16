@@ -1,3 +1,28 @@
 .projects-container {
     font-family: Arial;
 }
+
+.projects-title {
+    font-family: Courier;
+}
+
+.project-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.project-column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+
+@media (max-width: 800px) {
+    .project-column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}

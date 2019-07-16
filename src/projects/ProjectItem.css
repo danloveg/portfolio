@@ -1,0 +1,30 @@
+.project-image {
+    cursor: pointer;
+    width: 100%;
+}
+
+.project-card {
+    position: relative;
+    margin: 20px;
+    background-color: #303030;
+    color: white;
+}
+
+.info-box {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #303030;
+    color: white;
+    position: absolute;
+    z-index: 1;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
