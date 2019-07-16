@@ -9,8 +9,8 @@ class ProjectItem extends Component {
 
                 <Media query="(max-width: 800px)">
                     {matches => matches ?
-                        (<img src={this.props.smallImage} alt={this.props.title}></img>) :
-                        (<img src={this.props.bigImage} alt={this.props.title}></img>)
+                        (<a href={this.props.demoLink}><img src={this.props.smallImage} alt={this.props.title}></img></a>) :
+                        (<a href={this.props.demoLink}><img src={this.props.bigImage} alt={this.props.title}></img></a>)
                     }
                 </Media>
 

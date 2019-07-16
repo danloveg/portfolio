@@ -16,6 +16,7 @@ class Projects extends Component {
     render() {
         return (
             <div className="projects-container">
+                <br />
                 <ProjectItem
                     title={"UM Iris"}
                     bigImage={umIrisImage}
