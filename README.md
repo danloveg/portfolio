@@ -1,3 +1,3 @@
 # Personal Portfolio
 
-Visit __http://dlovegrove.ca__ to view my portfolio.
+Visit __https://dlovegrove.ca__ to view my portfolio.
