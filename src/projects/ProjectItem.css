@@ -1,3 +1,7 @@
+:root {
+    --content-padding: 20px;
+}
+
 .project-image {
     cursor: pointer;
     width: 100%;
@@ -6,7 +10,7 @@
 .project-card {
     position: relative;
     margin: 20px;
-    background-color: #f0f0f0;
+    background-color: #f7f7f7;
     box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
     color: #303030;
 }
@@ -19,7 +23,7 @@
     background-color: #f7f7f7;
     color: #303030;
     position: absolute;
-    padding: 20px;
+    padding: var(--content-padding);
 }
 
 .hide {
@@ -35,7 +39,7 @@
 }
 
 .project-intro {
-    padding: 20px;
+    padding: var(--content-padding);
     height: 100px;
 }
 
@@ -43,13 +47,6 @@
     clear: both;
     padding-top: 10px;
     font-size: 14pt;
-}
-
-@media(max-width: 512px) {
-    .project-intro .blurb {
-        font-size: 12pt !important;
-        padding-top: 0;
-    }
 }
 
 .horizontal-title-container {
@@ -74,10 +71,48 @@
     color: #303030;
 }
 
+.horizontal-button-container {
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 30px;
+}
+
+.link-button {
+    margin-right: 20px;
+    background-color: #145ac9;
+    padding: .4em;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 14pt;
+    text-decoration: none;
+    border: none;
+}
+
 .underlined {
     text-decoration: underline;
 }
 
 .clickable {
     cursor: pointer;
+}
+
+@media(max-width: 512px) {
+    .project-intro .blurb {
+        font-size: 12pt !important;
+        padding-top: 0;
+    }
+
+    .link-button {
+        font-size: 11pt;
+    }
+
+    .horizontal-button-container {
+        padding-bottom: 15px;
+    }
+
+    .info-box {
+        padding: 10px;
+    }
 }

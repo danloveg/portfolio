@@ -18,6 +18,8 @@ class ProjectItem extends Component {
         });
     }
 
+
+
     render() {
         return (
             <div className="project-card">
@@ -44,6 +46,13 @@ class ProjectItem extends Component {
                     </div>
                     <hr />
                     <UnorderedList text={this.props.projectInfo} />
+                    <div className="horizontal-button-container">
+                        <a href={this.props.demoLink} className="link-button">Demo</a>
+                        {
+                            this.props.codeLink === undefined ? null :
+                            <a href={this.props.codeLink} className="link-button">Code</a>
+                        }
+                    </div>
                 </div>
             </div>
         )
