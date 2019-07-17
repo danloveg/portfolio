@@ -2,8 +2,23 @@
     --header-height: 60px;
 }
 
+.off-white-background {
+    background-color: #efefef;
+}
+
 .responsive-container {
     position: relative;
     width: 90%;
     margin: auto;
+}
+
+.section-title {
+    color: #303030;
+    font-family: Courier;
+    text-align: center;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-size: 30pt;
+    font-weight: bolder;
 }

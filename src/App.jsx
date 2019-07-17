@@ -52,14 +52,16 @@ class App extends Component {
             <Header navigateToSection={this.navigateToSection} />
             <LandingPage navigateToSection={this.navigateToSection} />
 
-            <div className="responsive-container" ref={this.projectsRef}>
-                <Projects />
-            </div>
-            <div className="responsive-container" ref={this.aboutRef}>
-                <About />
-            </div>
-            <div className="responsive-container" ref={this.contactRef}>
-                <Contact />
+            <div className="off-white-background">
+                <div className="responsive-container" ref={this.projectsRef}>
+                    <Projects />
+                </div>
+                <div className="responsive-container" ref={this.aboutRef}>
+                    <About />
+                </div>
+                <div className="responsive-container" ref={this.contactRef}>
+                    <Contact />
+                </div>
             </div>
         </div>)
     }
