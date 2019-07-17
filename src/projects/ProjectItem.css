@@ -34,21 +34,50 @@
     transition: opacity 0.2s linear;
 }
 
-.project-info {
+.project-intro {
+    padding: 20px;
+    height: 100px;
+}
+
+.project-intro .blurb {
+    clear: both;
+    padding-top: 10px;
+    font-size: 14pt;
+}
+
+@media(max-width: 512px) {
+    .project-intro .blurb {
+        font-size: 12pt !important;
+        padding-top: 0;
+    }
+}
+
+.horizontal-title-container {
     height: 25px;
     line-height: 25px;
     padding-bottom: 10px;
 }
 
-.project-info.title {
-    float: left;
-    font-size: 16pt;
-    font-family: Courier;
-    font-weight: bold;
+.see-more-button {
+    float: right;
 }
 
 .close-button {
-    cursor: pointer;
     float: right;
     padding-top: 2.5px;
+}
+
+.main-title {
+    font-size: 16pt;
+    font-family: Courier;
+    font-weight: bold;
+    color: #303030;
+}
+
+.underlined {
+    text-decoration: underline;
+}
+
+.clickable {
+    cursor: pointer;
 }

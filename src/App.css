@@ -22,3 +22,20 @@
     font-size: 30pt;
     font-weight: bolder;
 }
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+@media(max-width: 512px) {
+    .section-title {
+        font-size: 20pt !important;
+        font-weight: bold;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}

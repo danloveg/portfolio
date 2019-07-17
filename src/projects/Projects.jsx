@@ -1,12 +1,9 @@
 import React, {Component} from "react"
 import "./Projects.css"
+import "../App.css"
 
 import ProjectItem from "./ProjectItem"
-
-import umIrisImage from "../assets/projects/um_iris_project.png"
-import breadtunesImage from "../assets/projects/breadtunes_project.png"
-import portfolioImage from "../assets/projects/portfolio_project.png"
-import cityOfWinnipegImage from "../assets/projects/city_of_winnipeg_project.png"
+import projects from "./ProjectsConfig.js"
 
 class Projects extends Component {
     render() {
@@ -19,36 +16,44 @@ class Projects extends Component {
                 <div className="project-row">
                     <div className="project-column">
                         <ProjectItem
-                            title={"UM Iris"}
-                            bigImage={umIrisImage}
-                            codeLink={"https://github.com/danloveg/Human-Computer-Interactions-Final-Project"}
-                            demoLink={"https://danloveg.github.io/Human-Computer-Interactions-Final-Project"}
+                            title={projects.umIrisTitle}
+                            image={projects.umIrisImage}
+                            intro={projects.umIrisIntro}
+                            codeLink={projects.umIrisCodeLink}
+                            demoLink={projects.umIrisDemoLink}
+                            projectInfo={projects.umIrisProjectInfo}
                             />
                     </div>
                     <div className="project-column">
                         <ProjectItem
-                            title={"BreadTunes Music Player"}
-                            bigImage={breadtunesImage}
-                            codeLink={"https://github.com/danloveg/Software-Engineering-Project"}
-                            demoLink={"https://danloveg.github.io"}
+                            title={projects.breadTunesTitle}
+                            image={projects.breadTunesImage}
+                            intro={projects.breadTunesIntro}
+                            codeLink={projects.breadTunesCodeLink}
+                            demoLink={projects.breadTunesDemoLink}
+                            projectInfo={projects.breadTunesProjectInfo}
                             />
                     </div>
                 </div>
                 <div className="project-row">
                     <div className="project-column">
                         <ProjectItem
-                            title={"Portfolio Website"}
-                            bigImage={portfolioImage}
-                            codeLink={"https://github.com/danloveg/portfolio"}
-                            demoLink={"https://dlovegrove.ca"}
+                            title={projects.portfolioTitle}
+                            image={projects.portfolioImage}
+                            intro={projects.portfolioIntro}
+                            codeLink={projects.portfolioCodeLink}
+                            demoLink={projects.portfolioDemoLink}
+                            projectInfo={projects.portfolioProjectInfo}
                             />
                     </div>
                     <div className="project-column">
                         <ProjectItem
-                            title={"City of Winnipeg MyUtilityBill"}
-                            bigImage={cityOfWinnipegImage}
-                            codeLink={undefined}
-                            demoLink={"https://myutilitybill.winnipeg.ca/UtilityPortal/signin"}
+                            title={projects.cityWinnipegTitle}
+                            image={projects.cityWinnipegImage}
+                            intro={projects.cityWinnipegIntro}
+                            codeLink={projects.cityWinnipegCodeLink}
+                            demoLink={projects.cityWinnipegDemoLink}
+                            projectInfo={projects.cityWinnipegProjectInfo}
                             />
                     </div>
                 </div>

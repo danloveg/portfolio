@@ -2,6 +2,7 @@ import React, {Component} from "react"
 import "./ProjectItem.css"
 
 import closeX from "../assets/close-button.png"
+import eye from "../assets/eye.png"
 
 class ProjectItem extends Component {
     constructor() {
@@ -21,22 +22,54 @@ class ProjectItem extends Component {
         return (
             <div className="project-card">
                 <img onClick={() => this.toggleInfoBox()}
-                    className="project-image" src={this.props.bigImage} alt={this.props.title}></img>
-                <p>Project Blurb</p>
-                <div className={"info-box " + (this.state.infoBoxShown ? "show" : "hide")}>
-                    <div className="project-info">
-                        <span className="project-info title">
-                            project info
+                    className="project-image" src={this.props.image} alt={this.props.title}></img>
+                <div className="project-intro">
+                    <div className="horizontal-title-container">
+                        <span className="float-left main-title underlined clickable"
+                            onClick={() => this.toggleInfoBox()}>
+                            {this.props.title}
                         </span>
-                        <div className="close-button" onClick={() => this.toggleInfoBox()}>
+                        <div className="see-more-button clickable" onClick={() => this.toggleInfoBox()}>
+                            <img height="25" src={eye} alt="See More button"></img>
+                        </div>
+                    </div>
+                    <div className="blurb">{this.props.intro}</div>
+                </div>
+                <div className={"info-box " + (this.state.infoBoxShown ? "show" : "hide")}>
+                    <div className="horizontal-title-container">
+                        <span className="float-left main-title">project info</span>
+                        <div className="close-button clickable" onClick={() => this.toggleInfoBox()}>
                             <img height="20" src={closeX} alt="Close button"></img>
                         </div>
                     </div>
                     <hr />
+                    <UnorderedList text={this.props.projectInfo} />
                 </div>
             </div>
         )
     }
+}
+
+/**
+ * Convert a string of dash-space delimited list items into a JSX unordered list
+ *
+ * @param {*} props: Must have a "text" property containing list
+ */
+function UnorderedList(props) {
+    const cleanText = props.text.replace("\n", "")
+    const listItems = cleanText.split("- ")
+
+    const jsxListItems = []
+
+    listItems.forEach(listItem => {
+        const trimmedListItem = listItem.trim()
+
+        if (trimmedListItem !== "") {
+            jsxListItems.push(<li key={Math.random()}>{trimmedListItem}</li>)
+        }
+    })
+
+    return <ul>{jsxListItems}</ul>
 }
 
 export default ProjectItem
