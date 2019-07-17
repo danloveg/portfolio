@@ -11,8 +11,7 @@ const projects = {
     umIrisCodeLink: "https://github.com/danloveg/Human-Computer-Interactions-Final-Project",
     umIrisDemoLink: "https://danloveg.github.io/Human-Computer-Interactions-Final-Project",
     umIrisProjectInfo: `
-    - One
-    - Two
+    - Info item
     `,
 
     breadTunesTitle: "BreadTunes",
@@ -21,8 +20,7 @@ const projects = {
     breadTunesCodeLink: "https://github.com/danloveg/Software-Engineering-Project",
     breadTunesDemoLink: "https://danloveg.github.io",
     breadTunesProjectInfo: `
-    - One
-    - Two
+    - Info item
     `,
 
     portfolioTitle: "Portfolio",
@@ -31,9 +29,7 @@ const projects = {
     portfolioCodeLink: "https://github.com/danloveg/portfolio",
     portfolioDemoLink: "https://dlovegrove.ca",
     portfolioProjectInfo: `
-    - One
-    - Two
-    - Three
+    - Info item
     `,
 
     cityWinnipegTitle: "MyUtilityBill",
@@ -42,10 +38,7 @@ const projects = {
     cityWinnipegCodeLink: undefined,
     cityWinnipegDemoLink: "https://myutilitybill.winnipeg.ca/UtilityPortal/signin",
     cityWinnipegProjectInfo: `
-    - One
-    - Two
-    - Three
-    - Four
+    - Info item
     `,
 }
 

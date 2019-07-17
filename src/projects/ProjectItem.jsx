@@ -3,6 +3,7 @@ import "./ProjectItem.css"
 
 import closeX from "../assets/close-button.png"
 import eye from "../assets/eye.png"
+import chainLink from "../assets/chain_link.png"
 
 class ProjectItem extends Component {
     constructor() {
@@ -47,10 +48,14 @@ class ProjectItem extends Component {
                     <hr />
                     <UnorderedList text={this.props.projectInfo} />
                     <div className="horizontal-button-container">
-                        <a href={this.props.demoLink} className="link-button">Demo</a>
+                        <a href={this.props.demoLink} className="link-button">
+                            Demo&nbsp;<img height="16" src={chainLink} alt="Link Symbol"></img>
+                        </a>
                         {
                             this.props.codeLink === undefined ? null :
-                            <a href={this.props.codeLink} className="link-button">Code</a>
+                            <a href={this.props.codeLink} className="link-button">
+                                Code&nbsp;<img height="16" src={chainLink} alt="Link Symbol"></img>
+                            </a>
                         }
                     </div>
                 </div>

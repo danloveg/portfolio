@@ -78,6 +78,8 @@
 }
 
 .link-button {
+    display: inline-block;
+    vertical-align: middle;
     margin-right: 20px;
     background-color: #145ac9;
     padding: .4em;
