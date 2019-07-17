@@ -2,10 +2,6 @@
     font-family: Arial;
 }
 
-.projects-title {
-    font-family: Courier;
-}
-
 .project-row {
     display: flex;
     flex-direction: row;

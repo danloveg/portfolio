@@ -13,7 +13,9 @@ class Projects extends Component {
         return (
             <div className="projects-container">
                 <br />
-                <h1 className="projects-title">my projects</h1>
+                <div className="section-title">
+                    projects
+                </div>
                 <div className="project-row">
                     <div className="project-column">
                         <ProjectItem
@@ -25,20 +27,20 @@ class Projects extends Component {
                     </div>
                     <div className="project-column">
                         <ProjectItem
-                            title={"Portfolio Website"}
-                            bigImage={portfolioImage}
-                            codeLink={"https://github.com/danloveg/portfolio"}
-                            demoLink={"https://dlovegrove.ca"}
+                            title={"BreadTunes Music Player"}
+                            bigImage={breadtunesImage}
+                            codeLink={"https://github.com/danloveg/Software-Engineering-Project"}
+                            demoLink={"https://danloveg.github.io"}
                             />
                     </div>
                 </div>
                 <div className="project-row">
                     <div className="project-column">
                         <ProjectItem
-                            title={"BreadTunes Music Player"}
-                            bigImage={breadtunesImage}
-                            codeLink={"https://github.com/danloveg/Software-Engineering-Project"}
-                            demoLink={"https://danloveg.github.io"}
+                            title={"Portfolio Website"}
+                            bigImage={portfolioImage}
+                            codeLink={"https://github.com/danloveg/portfolio"}
+                            demoLink={"https://dlovegrove.ca"}
                             />
                     </div>
                     <div className="project-column">
