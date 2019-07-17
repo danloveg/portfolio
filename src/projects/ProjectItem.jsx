@@ -24,24 +24,29 @@ class ProjectItem extends Component {
     render() {
         return (
             <div className="project-card">
-                <img onClick={() => this.toggleInfoBox()}
-                    className="project-image" src={this.props.image} alt={this.props.title}></img>
+                {/* Project picture and project introduction blurb */}
+                <img className="project-image" src={this.props.image} alt={this.props.title}
+                    onClick={() => this.toggleInfoBox()}></img>
                 <div className="project-intro">
                     <div className="horizontal-title-container">
                         <span className="float-left main-title underlined clickable"
                             onClick={() => this.toggleInfoBox()}>
                             {this.props.title}
                         </span>
-                        <div className="see-more-button clickable" onClick={() => this.toggleInfoBox()}>
+                        <div className="see-more-button clickable"
+                            onClick={() => this.toggleInfoBox()}>
                             <img height="25" src={eye} alt="See More button"></img>
                         </div>
                     </div>
                     <div className="blurb">{this.props.intro}</div>
                 </div>
+
+                {/* Project info box with code and demo links */}
                 <div className={"info-box " + (this.state.infoBoxShown ? "show" : "hide")}>
                     <div className="horizontal-title-container">
                         <span className="float-left main-title">project info</span>
-                        <div className="close-button clickable" onClick={() => this.toggleInfoBox()}>
+                        <div className="close-button clickable"
+                            onClick={() => this.toggleInfoBox()}>
                             <img height="20" src={closeX} alt="Close button"></img>
                         </div>
                     </div>
