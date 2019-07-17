@@ -44,7 +44,7 @@ class ProjectItem extends Component {
                 {/* Project info box with code and demo links */}
                 <div className={"info-box " + (this.state.infoBoxShown ? "show" : "hide")}>
                     <div className="horizontal-title-container">
-                        <span className="float-left main-title">project info</span>
+                        <span className="float-left main-title">{this.props.title} Info</span>
                         <div className="close-button clickable"
                             onClick={() => this.toggleInfoBox()}>
                             <img height="20" src={closeX} alt="Close button"></img>
