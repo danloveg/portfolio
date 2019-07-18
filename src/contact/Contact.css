@@ -1,0 +1,50 @@
+.contact-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.contact-column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+    text-align: center;
+}
+
+.contact-item {
+    color: #303030;
+    font-size: 16pt;
+    padding: 10px;
+}
+
+.contact-link {
+    color: #303030;
+    text-decoration: none;
+    cursor: pointer;
+
+    border-bottom: 1px solid rgba(48, 48, 48, 0);
+    -webkit-transition: border 0.3s linear;
+    -moz-transition: border 0.3s linear;
+    -ms-transition: border 0.3s linear;
+    -o-transition: border 0.3s linear;
+    transition: border 0.3s linear; 
+}
+
+.contact-link:hover {
+    border-bottom: 1px solid rgba(48, 48, 48, 1);
+}
+
+@media(max-width: 615px) {
+    .contact-column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+@media(max-width: 512px) {
+    .contact-item {
+        font-size: 12pt;
+    }
+}
