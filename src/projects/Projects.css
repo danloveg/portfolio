@@ -16,7 +16,7 @@
     flex: 1;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 850px) {
     .project-column {
         flex: 100%;
         max-width: 100%;

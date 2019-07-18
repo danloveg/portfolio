@@ -11,7 +11,9 @@ const projects = {
     umIrisCodeLink: "https://github.com/danloveg/Human-Computer-Interactions-Final-Project",
     umIrisDemoLink: "https://danloveg.github.io/Human-Computer-Interactions-Final-Project",
     umIrisProjectInfo: `
-    - Info item
+    - Used brainstorming, paper prototyping, and user surveys/interviews to create a user-centered product.
+    - Led the JavaScript side of development.
+    - Studied basic visual design principles.
     `,
 
     breadTunesTitle: "BreadTunes",
@@ -20,7 +22,10 @@ const projects = {
     breadTunesCodeLink: "https://github.com/danloveg/Software-Engineering-Project",
     breadTunesDemoLink: "https://danloveg.github.io",
     breadTunesProjectInfo: `
-    - Info item
+    - Created an Android app in a small team using Agile principles.
+    - Helped plan architecture guided by MVC ideas.
+    - Wrote unit, integration, and system tests.
+    - Sped application up by delegating tasks to asynchronous threads.
     `,
 
     portfolioTitle: "Portfolio",
@@ -29,7 +34,9 @@ const projects = {
     portfolioCodeLink: "https://github.com/danloveg/portfolio",
     portfolioDemoLink: "https://dlovegrove.ca",
     portfolioProjectInfo: `
-    - Info item
+    - Leveraged knowledge of JavaScript frameworks and libraries to learn React quickly.
+    - All hand-built with React and styled with vanilla CSS.
+    - Created custom images and icons with Adobe Illustrator and Inkscape.
     `,
 
     cityWinnipegTitle: "MyUtilityBill",
@@ -38,7 +45,9 @@ const projects = {
     cityWinnipegCodeLink: undefined,
     cityWinnipegDemoLink: "https://myutilitybill.winnipeg.ca/UtilityPortal/signin",
     cityWinnipegProjectInfo: `
-    - Info item
+    - Added functionality to public website back-end using C# ASP.NET.
+    - Managed database tables and created PowerShell scripts to quicken repetitive SQL tasks.
+    - Managed and maintained automated email response system to provide customers with a uniform experience.
     `,
 }
 

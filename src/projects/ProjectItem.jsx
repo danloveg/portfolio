@@ -50,8 +50,10 @@ class ProjectItem extends Component {
                             <img height="20" src={closeX} alt="Close button"></img>
                         </div>
                     </div>
-                    <hr />
-                    <UnorderedList text={this.props.projectInfo} />
+                    <hr className="responsive-hr" />
+                    <div className="info-list">
+                        <UnorderedList text={this.props.projectInfo} />
+                    </div>
                     <div className="horizontal-button-container">
                         <a href={this.props.demoLink} className="link-button">
                             Demo&nbsp;<img height="16" src={chainLink} alt="Link Symbol"></img>

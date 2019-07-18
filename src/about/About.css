@@ -23,11 +23,10 @@
 .about-text {
     position: relative;
     margin: 20px;
-    width: 100%;
     font-size: 14pt;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 850px) {
     .about-column {
         flex: 100%;
         max-width: 100%;

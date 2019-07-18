@@ -38,6 +38,14 @@
     transition: opacity 0.2s linear;
 }
 
+.responsive-hr {
+    display: block;
+}
+
+.info-list {
+    font-size: 14pt;
+}
+
 .project-intro {
     padding: var(--content-padding);
     height: 100px;
@@ -100,7 +108,21 @@
     cursor: pointer;
 }
 
+@media(max-width: 980px) {
+    .info-list {
+        font-size: 11pt;
+    }
+}
+
 @media(max-width: 512px) {
+    .responsive-hr {
+        display: none;
+    }
+
+    ul {
+        margin-top: 0;
+    }
+
     .project-intro .blurb {
         font-size: 12pt !important;
         padding-top: 0;
