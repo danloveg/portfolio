@@ -6,6 +6,7 @@ import LandingPage from "./landing-page/LandingPage"
 import Projects from "./projects/Projects"
 import About from "./about/About"
 import Contact from "./contact/Contact"
+import Footer from "./footer/Footer"
 import SectionEnum from "./SectionEnum"
 
 class App extends Component {
@@ -62,6 +63,9 @@ class App extends Component {
                 <div className="responsive-container" ref={this.contactRef}>
                     <Contact />
                 </div>
+
+                <br />
+                <Footer />
             </div>
         </div>)
     }
