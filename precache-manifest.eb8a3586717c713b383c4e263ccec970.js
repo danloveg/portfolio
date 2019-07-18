@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1bd1f6406706b64edfdfce3a3aec2e49",
+    "revision": "c7894eefc0a4a923515a8c0d52111737",
     "url": "/index.html"
   },
   {
-    "revision": "23273f9c0fafe5fa3845",
-    "url": "/static/css/main.4103f52c.chunk.css"
+    "revision": "810aa3cd06b178a582ab",
+    "url": "/static/css/main.1174c0da.chunk.css"
   },
   {
-    "revision": "8aa6a22c6fe661cce174",
-    "url": "/static/js/2.94527a30.chunk.js"
+    "revision": "80bca277fdbddeb21d90",
+    "url": "/static/js/2.34f425d3.chunk.js"
   },
   {
-    "revision": "23273f9c0fafe5fa3845",
-    "url": "/static/js/main.a7621942.chunk.js"
+    "revision": "810aa3cd06b178a582ab",
+    "url": "/static/js/main.f7ad2f00.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
@@ -22,6 +22,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "8e8a21d58ca20cf10d6653192d6b887e",
     "url": "/static/media/Resume_07_2019_DLovegrove.8e8a21d5.pdf"
+  },
+  {
+    "revision": "21148dda46d3b7bc15ef362d94ad9e62",
+    "url": "/static/media/about_me_picture.21148dda.png"
   },
   {
     "revision": "6e071722a27933c228686a1fb2bcc157",
