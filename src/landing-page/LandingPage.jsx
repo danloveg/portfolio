@@ -4,7 +4,7 @@ import "./LandingPage.css"
 import SectionEnum from "../SectionEnum"
 
 import downArrow from "../assets/down_arrow.png"
-import resumePdf from "../assets/Resume_07_2019_DLovegrove.pdf"
+import resumePdf from "../assets/Resume_DLovegrove.pdf"
 
 class LandingPage extends Component {
     render() {
