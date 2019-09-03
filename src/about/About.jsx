@@ -28,7 +28,7 @@ class About extends Component {
                             <br />
                             <br />
                             I am a minimalist at home, and spend lots of time on my bicycle, on the yoga mat, and
-                            experimenting in the kitchen. I am currently living in Ontario, Canada.
+                            experimenting in the kitchen. I am currently employed at the University of Manitoba.
                         </div>
                     </div>
                 </div>
