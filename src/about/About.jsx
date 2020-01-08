@@ -28,11 +28,15 @@ class About extends Component {
                             <br />
                             <br />
                             I am a minimalist at home, and spend lots of time on my bicycle, on the yoga mat, and
+<<<<<<< HEAD
                             experimenting in the kitchen.
                             <br />
                             <br />
                             I am currently employed with the National Centre for Truth and
                             Reconciliation at the University of Manitoba.
+=======
+                            experimenting in the kitchen. I am currently employed at the University of Manitoba.
+>>>>>>> 11d9e6e2314dee69ab132c9e08597ac9b823ac0a
                         </div>
                     </div>
                 </div>
